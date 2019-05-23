@@ -1,7 +1,7 @@
 {
   "name": "perlur/laravel-erp-finance-accounting",
     "description": "Laravel Double-entry Accounting for Laravel",
-    "license": "AGPL-3",
+    "license": "AGPL-3.0",
     "keywords": [
         "laravel",
         "erp",
