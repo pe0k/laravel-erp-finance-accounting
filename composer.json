@@ -1,17 +1,29 @@
 {
   "name": "perlur/laravel-erp-finance-accounting",
     "description": "Laravel Double-entry Accounting for Laravel",
-    "license": "MIT",
-    "keywords": ["laravel", "erp", "finance", "accounting"],
+    "license": "AGPL-3",
+    "keywords": [
+        "laravel",
+        "erp",
+        "finance",
+        "accounting"
+    ],
+    "homepage": "https://github.com/PERLUR/laravel-erp-finance-accounting",
+    "type": "package",
     "authors": [
      {
             "name": "Mark Stopka",
             "email": "mark.stopka@perlur.cloud"
         }
     ],
+    "support": {
+        "issues": "https://github.com/PERLUR/laravel-erp-finance-accounting/issues",
+        "source": "https://github.com/PERLUR/laravel-erp-finance-accounting"
+    },
     "require": {
         "moneyphp/money": "^3.0",
-        "ramsey/uuid": "^3.7"
+        "ramsey/uuid": "^3.7",
+        "illuminate/database": "5.7.* || 5.8.*"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
