@@ -2,7 +2,7 @@
   "name": "perlur/laravel-erp-finance-accounting",
     "description": "Laravel Double-entry Accounting for Laravel",
     "license": "MIT",
-    "keywords": ["laravel", ,"erp", "finance", "accounting"],
+    "keywords": ["laravel", "erp", "finance", "accounting"],
     "authors": [
      {
             "name": "Mark Stopka",
