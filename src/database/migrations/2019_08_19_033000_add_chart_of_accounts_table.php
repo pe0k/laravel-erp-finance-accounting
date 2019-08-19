@@ -16,12 +16,16 @@ class CreateChartOfAccountsTable extends Migration {
       $table->unsignedInteger('account_parent_id');
       $table->text('account_name');
       $table->enum('account_type',
-        ['view'],
         ['asset'],
-        ['liability'],
-        ['income'],
+        ['bank'],
+        ['cash'],
+        ['equity'],
         ['expense'],
-        ['other']
+        ['liability'],
+        ['payable'],
+        ['receivable'],
+        ['view'],
+        ['profit_and_loss']
       );
       $table->timestamps();
     )};
