@@ -23,6 +23,7 @@ class CreateChartOfAccountsTable extends Migration {
         ['expense'],
         ['other']
       );
+      $table->timestamps();
     )};
   }
 
