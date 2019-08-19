@@ -19,6 +19,7 @@ class CreateChartOfAccountsTable extends Migration {
         ['asset'],
         ['bank'],
         ['cash'],
+        ['cryptocurrency'],
         ['equity'],
         ['expense'],
         ['liability'],
