@@ -1,39 +1,48 @@
 {
   "name": "perlur/laravel-erp-finance-accounting",
-    "description": "Laravel Double-entry Accounting for Laravel",
-    "license": "AGPL-3.0",
-    "keywords": [
-        "laravel",
-        "erp",
-        "finance",
-        "accounting"
-    ],
-    "homepage": "https://github.com/PERLUR/laravel-erp-finance-accounting",
-    "type": "package",
-    "authors": [
-     {
-            "name": "Mark Stopka",
-            "email": "mark.stopka@perlur.cloud"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/PERLUR/laravel-erp-finance-accounting/issues",
-        "source": "https://github.com/PERLUR/laravel-erp-finance-accounting"
-    },
-    "require": {
-        "moneyphp/money": "^3.0",
-        "ramsey/uuid": "^3.7",
-        "illuminate/database": "5.7.* || 5.8.*"
-    },
-    "require-dev": {
-        "mockery/mockery": "^0.9.5",
-        "orchestra/testbench": "~3.4.0",
-        "orchestra/database": "~3.4.0",
-        "phpunit/phpunit": "^5.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "PERLUR\\ERP\\Finance\\Accounting\\": "src/"
-        }
+  "description": "Laravel Double-entry Accounting for Laravel",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "laravel",
+    "erp",
+    "finance",
+    "accounting"
+  ],
+  "homepage": "https://github.com/PERLUR/laravel-erp-finance-accounting",
+  "type": "package",
+  "authors": [
+    {
+      "name": "Mark Stopka",
+      "email": "mark.stopka@perlur.cloud"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/PERLUR/laravel-erp-finance-accounting/issues",
+    "source": "https://github.com/PERLUR/laravel-erp-finance-accounting"
+  },
+  "require": {
+    "illuminate/database": "^6.2",
+    "illuminate/support": "^6.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.2",
+    "orchestra/database": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PERLUR\\ERP\\Finance\\Accounting\\": "src/Accounting"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PERLUR\\ERP\\Finance\\Accounting\\AccountingServiceProvider"
+      ]
+    }
+  }
 }
