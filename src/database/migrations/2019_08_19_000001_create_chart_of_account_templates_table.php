@@ -1,3 +1,4 @@
+<?php
 use Illuminate\Database\Migrations\Migration;
 
 class CreateChartOfAccountTemplatesTable extends Migration {
@@ -10,12 +11,12 @@ class CreateChartOfAccountTemplatesTable extends Migration {
   public function up()
   {
     // Creates the chart_of_account_templates table
-    Schema::create('chart_of_account_templates'), function($table) {
+    Schema::create('chart_of_account_templates', function($table) {
       $table->increments('id');
       $table->text('name');
       $table->text('template_path');
       $table->timestamps();
-    )};
+    });
   }
 
   /**

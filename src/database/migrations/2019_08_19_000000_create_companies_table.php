@@ -1,3 +1,4 @@
+<?php
 use Illuminate\Database\Migrations\Migration;
 
 class CreateCompaniesTable extends Migration {
@@ -10,13 +11,13 @@ class CreateCompaniesTable extends Migration {
   public function up()
   {
     // Creates the companies table
-    Schema::create('companies'), function($table) {
+    Schema::create('companies', function($table) {
       $table->increments('id');
       $table->text('company_name');
-      $table->unsignedInteger('country_id')
+      $table->unsignedInteger('country_id');
       $table->unsignedInteger('chart_of_accounts_root_id')->nullable();
       $table->timestamps();
-    )};
+    });
   }
 
   /**
