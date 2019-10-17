@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chart_of_accounts_template>
+  <data noupdate="1">
+    <record model="account.account.template" id="account_template_entrepreneurs_root">
+      <field name="code">root</field>
+      <field name="name">Root account</field>
+      <field name="type">view</field>
+      <field ref="account.data_account_type_view" name="user_type"/>
+    </record>
+  </data>
+</chart_of_accounts_template>
