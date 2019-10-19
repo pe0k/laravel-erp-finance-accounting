@@ -16,7 +16,7 @@ class AccountingServiceProvider extends ServiceProvider
     {
         $this->publishes([
             $this->configPath => 
-                config_path('perlur_erp_finance_accounting.php')
+                config_path('accounting.php')
         ], 'config');
 
         $this->publishes([
